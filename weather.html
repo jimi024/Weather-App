@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weathe.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search_box">
+                <input type="text" placeholder="Enter Your Location" class="input_box">
+                <button id="search_button"></button>
+            </div>
+        </div>
+        <div class="Location_Not_Found">
+            <h1>Sorry Location Not Found !</h1>
+            <img src="404.png" alt="404 Error">
+        </div>
+        <div class="weather_body">
+            <img src="cloud.png" alt="Weather Image" class="weather-img">
+            <div class="weather_box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+            <div class="weather_info">
+                <div class="DarkNess">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="DarkNess">45%</span>
+                        <p>DarkNess</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wind">
+                <div class="text">
+                    <span id="Wind_Speed">12 km/h</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="weather.js"></script>
+</body>
+</html>

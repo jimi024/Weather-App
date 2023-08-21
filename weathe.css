@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 28px;
+}
+.search_box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search_box input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000;
+    background-color: #e6f5fb;
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+.search_box input::placeholder{
+    color: #000;
+}
+.weather_body{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    display: none;
+}
+.weather_body img{
+    width: 60%;
+}
+
+.weather_box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather_box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather_box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.weather_box .description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.weather_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.DarkNess, .wind{
+    display: flex;
+    align-items: center;
+}
+
+.DarkNess{
+    margin-left: 20px;
+}
+
+.wind{
+    margin-right: 20px;
+}
+
+.weather_info i{
+    font-size: 36px;
+}
+
+.weather_info .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Location_Not_Found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Location_Not_Found h1{
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
+}
+.Location_Not_Found img{
+    width: 80%;
+}
+
